@@ -1,1 +1,1 @@
-![Image](./naincyphoto)
+![Image](./naincyphoto.jpeg)
