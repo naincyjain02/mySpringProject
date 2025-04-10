@@ -22,6 +22,16 @@ public class User {
    public User() {
 	   
    }
+   public User(long contactn) {
+	   this.contactn=contactn;
+   }
+   public User(String password) {
+	   this.password=password;
+   }
+   public User(long contactn,String password) {
+	   this.contactn=contactn;
+	   this.password=password;
+   }
    public User(String email,long contactn,String password) {
 	   this.email=email;
 	   this.contactn=contactn;
