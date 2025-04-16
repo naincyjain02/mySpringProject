@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.naincy.SpringWebProject.model.User;
@@ -15,10 +16,10 @@ public class UserService {
 	@Autowired
 	UserRepo repo;
 	
-	
+	private BCryptPasswordEncoder encoder=new BCryptPasswordEncoder(12);
 	
    public User addUser(User user){
-	   
+	   user.setPassword(encoder.encode(user.getPassword()));
 	  return repo.save(user); 
 	   
    }

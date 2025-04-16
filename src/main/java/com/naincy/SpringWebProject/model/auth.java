@@ -9,7 +9,7 @@ public class auth {
     	return email;
     }
     
-    public String password() {
+    public String getPassword() {
     	return password;
     }
 }
