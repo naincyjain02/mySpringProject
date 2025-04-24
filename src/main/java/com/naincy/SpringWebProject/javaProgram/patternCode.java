@@ -33,3 +33,12 @@ public class patternCode {
   }
 }
 
+//Output
+//* * * * * * * * * * * 
+//*         *         * 
+//*       * * *       * 
+//*     * * * * *     * 
+//*   * * * * * * *   * 
+//* * * * * * * * * * * 
+//Stars in Triangle are :16
+//Stars in Rectangle are :46
